@@ -14,7 +14,7 @@ Servir de dépôt distant public des médias (photos, vidéos) publiés par @hab
 ## Interfaces
 - **J'entre** : rien (pas de pull actif — je reçois en écriture depuis `HLP/hlp-social`)
 - **Je sors** : les fichiers médias servis en URL raw GitHub, consommés par le cron de publication et les plateformes tierces
-- **Miroirs** : `HLP/hlp-social/content/…` **fait foi** (source + rendu) ; ce repo est le miroir publié, rafraîchi par dual-write depuis `HLP/hlp-social`. `privacy-policy.html` : **doublon périmé, ne fait PAS foi** (arbitré 2026-08-02 → `HLP/habitation-la-pinede/privacy-policy.html` fait foi). Texte juridique identique, mais cette copie date du 22/05 et référencerait 5 icônes absentes de ce repo. À supprimer après vérification qu'aucun portail développeur ne pointe son URL raw.
+- **Miroirs** : `HLP/hlp-social/content/…` **fait foi** (source + rendu) ; ce repo est le miroir publié, rafraîchi par dual-write depuis `HLP/hlp-social`. ✅ `privacy-policy.html` : doublon **supprimé le 2026-08-02** — `HLP/habitation-la-pinede/privacy-policy.html` fait foi (texte juridique identique, cette copie datait du 22/05 et référençait 5 icônes absentes d'ici). Récupérable dans l'historique git si un portail pointait cette URL.
 
 ## M'adresser un travail
-Adressage : `send_message` à une session ouverte sur ce dossier, sinon agent d'exécution lancé directement dedans (jamais de chip) · cwd=`/Users/benjamindupouy/Developer/Claude-Projet/HLP/hlp-media` — usage attendu quasi nul en écriture directe : les écritures normales passent par le dual-write de `HLP/hlp-social`, pas par une session ouverte ici.
+cwd=`/Users/benjamindupouy/Developer/Claude-Projet/HLP/hlp-media` — usage attendu quasi nul en écriture directe : les écritures normales passent par le dual-write de `HLP/hlp-social`, pas par une session ouverte ici.
