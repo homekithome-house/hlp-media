@@ -14,7 +14,7 @@ Servir de dépôt distant public des médias (photos, vidéos) publiés par @hab
 ## Interfaces
 - **J'entre** : rien (pas de pull actif — je reçois en écriture depuis `HLP/hlp-social`)
 - **Je sors** : les fichiers médias servis en URL raw GitHub, consommés par le cron de publication et les plateformes tierces
-- **Miroirs** : `HLP/hlp-social/content/…` **fait foi** (source + rendu) ; ce repo est le miroir publié, rafraîchi par dual-write depuis `HLP/hlp-social`. `privacy-policy.html` ici diverge de celui de `HLP/habitation-la-pinede` (152 vs 161 lignes) sans arbitrage — voir QUESTION dans le contrat `habitation-la-pinede`.
+- **Miroirs** : `HLP/hlp-social/content/…` **fait foi** (source + rendu) ; ce repo est le miroir publié, rafraîchi par dual-write depuis `HLP/hlp-social`. `privacy-policy.html` : **doublon périmé, ne fait PAS foi** (arbitré 2026-08-02 → `HLP/habitation-la-pinede/privacy-policy.html` fait foi). Texte juridique identique, mais cette copie date du 22/05 et référencerait 5 icônes absentes de ce repo. À supprimer après vérification qu'aucun portail développeur ne pointe son URL raw.
 
 ## M'adresser un travail
 Chip `spawn_task` cwd=`/Users/benjamindupouy/Developer/Claude-Projet/HLP/hlp-media` — usage attendu quasi nul en écriture directe : les écritures normales passent par le dual-write de `HLP/hlp-social`, pas par une session ouverte ici.
